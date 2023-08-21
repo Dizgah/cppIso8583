@@ -31,6 +31,10 @@
 
 #include "dl_base.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 /******************************************************************************/
 //
 // TYPES
@@ -72,5 +76,9 @@ typedef DL_UINT32	DL_ERR;
 // 4000-4019	dl_staticQ
 
 /******************************************************************************/
+
+#ifdef __cplusplus
+} // extern "C"
+#endif // __cplusplus
 
 #endif /* __INC_DL_ERR */

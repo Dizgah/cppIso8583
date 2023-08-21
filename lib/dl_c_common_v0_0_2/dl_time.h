@@ -47,6 +47,10 @@
 #include <sys/types.h>
 #endif /* DL_UNIX */
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 /******************************************************************************/
 //
 // CONSTANTS
@@ -174,5 +178,9 @@ void _DL_TIME_GetDaysInMonth ( int  iMonth,
 							   int *oDaysInMonth );
 
 /******************************************************************************/
+
+#ifdef __cplusplus
+} // extern "C"
+#endif // __cplusplus
 
 #endif /* __INC_DL_TIME */

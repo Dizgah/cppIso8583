@@ -45,6 +45,10 @@
 #include <sys/time.h>
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 /******************************************************************************/
 //
 // TYPES
@@ -70,5 +74,9 @@ void DL_TIMER_Start ( DL_TIMER *oTimer );
 DL_UINT32 DL_TIMER_GetDuration ( DL_TIMER iTimer );
 
 /******************************************************************************/
+
+#ifdef __cplusplus
+} // extern "C"
+#endif // __cplusplus
 
 #endif /* __INC_DL_TIMER */

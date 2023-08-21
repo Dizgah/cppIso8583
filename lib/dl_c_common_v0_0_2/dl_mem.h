@@ -30,6 +30,10 @@
 
 #include <string.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 /******************************************************************************/
 //
 // ERROR CODES (1000-1019)
@@ -68,5 +72,9 @@ DL_ERR DL_MEM_callocWithInit ( DL_UINT32   numItems,
 							   void      **out );
 
 /******************************************************************************/
+
+#ifdef __cplusplus
+} // extern "C"
+#endif // __cplusplus
 
 #endif /* __INC_DL_MEM */

@@ -29,6 +29,10 @@
 #include "dl_err.h"
 #include "dl_mem.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 /******************************************************************************/
 //
 // CONSTANTS
@@ -142,5 +146,9 @@ void DL_ISO8583_COMMON_SetHandler ( DL_ISO8583_FIELD_DEF *iFieldDefArr,
 								    DL_ISO8583_HANDLER   *oData );
 
 /******************************************************************************/
+
+#ifdef __cplusplus
+} // extern "C"
+#endif // __cplusplus
 
 #endif /* __INC_DL_ISO8583_COMMON */

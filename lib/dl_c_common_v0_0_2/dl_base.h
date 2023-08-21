@@ -34,6 +34,9 @@
 #include <stdarg.h>
 #include <assert.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
 /******************************************************************************/
 //
 // OPERATING SYSTEM / ENVIRONMENT SETTINGS
@@ -223,5 +226,9 @@ typedef DL_UINT32 DL_UCHAR; // unicode character
    ? (DL_UINT32)limit : (DL_UINT32)(initial)+(DL_UINT32)(addition))
 
 /******************************************************************************/
+
+#ifdef __cplusplus
+} // extern "C"
+#endif // __cplusplus
 
 #endif /* __INC_DL_BASE */

@@ -35,6 +35,10 @@
 
 #include <string.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 /******************************************************************************/
 
 extern DL_CHAR kDL_STR_EmptyStr[1];
@@ -189,5 +193,9 @@ DL_CHAR *DL_STR_ReadToBuffer ( const DL_CHAR *iStr,
 						       DL_CHAR       *oBuffer );
 
 /******************************************************************************/
+
+#ifdef __cplusplus
+} // extern "C"
+#endif // __cplusplus
 
 #endif /* __INC_DL_STR */
