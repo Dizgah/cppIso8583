@@ -22,4 +22,9 @@ set(libIso8583_src
     lib/dl_c_iso8583_v0_0_3/dl_iso8583_defs_1993.c
     lib/dl_c_iso8583_v0_0_3/dl_iso8583_fields.c)
 
-add_library(cppIso8583 ${libIso8583_src} cppiso8583.cpp)
+add_library(cppIso8583 ${libIso8583_src})
+
+add_executable(demo main.cpp)
+target_link_libraries (demo cppIso8583)
+
+
