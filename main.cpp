@@ -1,22 +1,26 @@
-#include <fstream>
 #include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include<chrono>
+#include<thread>
+#include <vector>
 #include <string>
-#include <filesystem>
-#include <system_error>
-#include <map>
-#include <utility>
-#include <chrono>
-
-#include "cppiso8583.h"
+#include <queue>
+#include <list>
+#include <memory>
 
 #include "dl_iso8583.h"
-#include "dl_iso8583_defs_1987.h"
+#include "dl_iso8583_defs_1993.h"
 #include "dl_output.h"
 
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::cout << "testing build" << std::endl;
+    DL_ISO8583_HANDLER isoHandler;
+    DL_ISO8583_MSG     isoMsg;
+    DL_UINT8           packBuf[1000];
+    DL_UINT16          packedSize;
 
-    return 0;
+    /* get ISO-8583 1993 handler */
+    DL_ISO8583_DEFS_1993_GetHandler(&isoHandler);
 }
